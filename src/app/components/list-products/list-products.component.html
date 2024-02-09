@@ -1,7 +1,7 @@
 <div class="container">
     <div class="title">
         <h4>Listado de Ingredientes</h4>
-        <button type="button" class="btn btn-success" routerLink="/add">Agregar</button>
+        <button type="button" class="btn btn-success" [routerLink]="['/add']">Agregar</button>
     </div>
     
     <table class="table table-secondary">
@@ -22,7 +22,7 @@
             <td>{{item.price}}</td>
             <td>{{item.stock}}</td>
             <td>
-                <button type="button" class="btn btn-dark btn-sm">Edit</button>
+                <button type="button" class="btn btn-dark btn-sm" [routerLink]="['/edit',item.id]">Edit</button>
                 <button type="button" class="btn btn-info btn-sm ms-2">Delete</button>
             </td>
         </tr>
